@@ -1,0 +1,72 @@
+.productClass ul li {background-color: $divBackground;}
+.prolist .proListText {padding: rem(10); background: $divBackground;}
+.productClass ul li {border-bottom: $borderWidth solid #dddddd; margin-bottom: rem(10);}
+.productClass ul li a {font-size: rem(16); line-height: rem(24); color:$fontColor;}
+.productClass ul li a .proListText section:first-child p:last-of-type {font-size: rem(12); color: #999999;}
+.proListText section:last-child {color: #FF6333;}
+.proListText section:last-child span {font-size: rem(12); color: #999999;}
+
+.ProNav {width: 100%; height: rem(50); line-height: rem(50); border-top: $borderWidth solid #FCFCFC; background: $divBackground; position: fixed; bottom: 0; left: 0;}
+.ProNav a {font-size: rem(14); color: $fontColor; display:block; text-align: center; position: relative;}
+.ProNav a:after {content: ""; position: absolute; top: 0; right: 0; height: 100%; border-right: $borderWidth solid #DDDDDD;}
+.ProNav a:last-child:after {border-right: none;}
+.ProNav a.on {color: #009688;}
+.Product_Margin {padding-bottom: rem(50);}
+
+.prowith_img {position: relative; width: rem(375); height: rem(166);  overflow: hidden;}
+.prowith_img .proImgBack {width: rem(375); height: rem(166);  position: absolute; top: 0; left: 0;
+  /*background: -webkit-linear-gradient(top,rgba(237,237,237,0.00), rgba(0.0.0.0.3));*/ background: -webkit-linear-gradient(top, rgba(238,238,238,0), rgba(0,0,0,0.3));}
+.prowith_img .proImgText {position: absolute; bottom: rem(15); left: 0; text-align: center; width: 100%; color: $divBackground; font-size: rem(18);}
+.prowith_img .proImgText p:first-of-type {font-size: rem(28); margin-bottom: rem(5);}
+.proCenterNav {background: $divBackground; margin: rem(10) 0; text-align: center; box-sizing: content-box; -webkit-box-sizing: content-box;  border-bottom: rem(1) solid #dddddd;}
+.proCenterNav li {padding: rem(10) 0; position: relative;}
+.proCenterNav li.navColor:after {content:""; width: 100%; height: rem(4); background: #0F94E7; position: absolute; bottom: 0; left: 0;}
+.proCenterNav li a {font-size: rem(14); color: $fontColor; line-height: rem(30); position: relative; display: block;}
+.proCenterNav li a:after {content:""; width: rem(1); height: rem(30); position: absolute; top: 0; right: 0; background-color: #dcdcdc;}
+.proCenterNav li:last-child a:after {content: ""; background-color: transparent;}
+.proContent {background-color: $divBackground;}
+.proContent .ContentProduct {font-size: rem(14); color: $fontColor; line-height: rem(30);}
+.proCenterNav li a {position: relative; display: block;}
+.proCenterNav li.navColor a {color: #009688;}
+.proCenterFixed {position: fixed; top: 0; left: 0; width: 100%; margin-top: 0;}
+.Visible {display: block;}
+.Hidden {display: none;}
+.WithNav a:nth-of-type(4) {background: linear-gradient(top,#ADE9FA,#74CDF3); background: -webkit-linear-gradient(top,#ADE9FA,#74CDF3); color: $divBackground;}
+.WithNav a:nth-of-type(5) {background: linear-gradient(top,#15DF10,#09BB07); background: -webkit-linear-gradient(top,#15DF10,#09BB07); color: $divBackground;}
+.WithNav a:nth-of-type(4) ,.WithNav a:nth-of-type(5) {padding:0 rem(10);}
+
+/*Record.html*/
+.Record {padding-bottom: rem(10);}
+.RecordMian ul li {background-color: $divBackground; margin-top: rem(10); border-top: rem(1) solid #dddddd; border-bottom: rem(1) solid #dddddd;}
+.RecordNumber ,.RecordContent ,.RecorBtn {padding: rem(12) rem(10);}
+.RecordMun {font-size: rem(14); color: #999999; line-height: rem(24);}
+.RecordNumber ,.RecordContent {border-bottom: rem(1) solid #e7e7e7;}
+.RecordNumber p:last-of-type span.spanVisible {color: #1AAD18;}
+.RecordContent .RecorText p {padding: rem(1) 0;}
+.RecordContent .RecorText p:first-of-type {font-size: rem(16); color: #333333;}
+.RecordContent .RecorText p:last-of-type span {float: right;}
+.RecorImg {width: rem(50); height: rem(50); background: linear-gradient(top,#85D4F7,#4DA9EB); background: -webkit-linear-gradient(top,#85D4F7,#4DA9EB); border-radius: 50%; margin-right: rem(10);}
+.RecorBtn {text-align: right; display: none;}
+.RecorBtn a {display: inline-block; color: #09BB07; border: rem(1) solid #09BB07; padding: rem(5) rem(10); border-radius: rem(3); margin-left: rem(10); box-sizing: border-box; -webkit-box-sizing: border-box;}
+.RecorBtn a:first-of-type {color: #FF6333; border: rem(1) solid #dddddd;}
+.RecorHidden {display: block;}
+.RecorImg{text-align: center; font-size: rem(16); color: $divBackground; line-height: rem(23);}
+.RecorImgThree {line-height: rem(50);}
+
+#TestBack {width: 100%; hieght: 100%; position: fixed; top: 0; bottom: 0; background-color: rgba(0,0,0,0.8); display: none;}
+.TestMun {width: 100%; height: 100%;}
+.TestMian {width: rem(250); margin: 0 auto; background-color: $divBackground; border-radius: rem(5);}
+.TestMian .TestTitle {padding: rem(20) rem(15); font-size: rem(18); color: #333333; text-align: center;  }
+.TestMian ul {width: 100%; border-top: $borderWidth solid #dddddd;}
+.TestMian ul li {width: 50%; text-align: center;}
+.TestMian ul li:first-child {border-right: $borderWidth solid #dddddd;}
+.TestMian ul li a {font-size: rem(16); color: #333333; line-height: rem(45); display: block;}
+.TestMian ul li:last-child a {color: #02BB00;}
+
+.tableList {padding: rem(15); font-size: rem(14); background: $divBackground;}
+.tableContent {border: $borderWidth solid #dddddd; border-bottom: none; width: 100%;}
+.tableContent tr td {padding: rem(10); color: #333333; border-bottom: $borderWidth solid #dddddd; font-weight: normal; line-height: rem(24);}
+.tableContent tr td:first-child { color: #333333; width: rem(100); border-right: $borderWidth solid #dddddd;}
+.VisiTitle {width: 100%; height: rem(45); line-height: rem(45); font-size: rem(14); color:#333333; background: #EFEFF4; text-align: center; margin-top: rem(10);}
+.jssue {font-size: rem(14); font-weight:normal; line-height: rem(24); text-align: justify; color: #999999;}
+.jssue .jssueTitle {color: #0F94E7; padding: rem(10) 0;}

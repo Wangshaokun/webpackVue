@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <style type="text/css">
+        .Text.TextHidden {display:none;}
+    </style>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.click').on('click',function(){
+                $('.Text').toggleClass('TextHidden');
+                $('.num').text('1');
+            });
+            Timer();
+        });
+
+        function Timer(){
+            setInterval(function(){
+                var num = $.trim($('.num').text());
+                if(num > 0){
+                    $('.num').text('0');
+                    console.log('用户还在浏览');
+                }else{
+                    console.log('用户离开页面');
+                }
+            },5000)
+        }
+
+        function dateer(arr){
+            var now = new Date();
+            var getHours = now.getHours();
+            var getMinutes = now.getMinutes();
+            var getSeconds = now.getSeconds();
+            var getArr = getHours + ":" + getMinutes + ":" + getSeconds;
+            arr.push(getArr);
+            return getArr
+        }
+    </script>
+</head>
+<body>
+<div class="Mian">
+    <div class="click">点击内容隐藏，在点击内容显示</div>
+    <div class="Text">
+        这是内容<br/>
+        这是内容<br/>
+        这是内容<br/>
+        这是内容<br/>
+        这是内容<br/>
+        这是内容
+    </div>
+</div>
+<div class="num">1</div>
+<!--<div class="divCi"></div>-->
+<!--<div id="divScr"></div>-->
+<!--<script>-->
+    <!--window.onload = function(){-->
+        <!--var i = 0;-->
+        <!--var u = 0-->
+        <!--$("body").click(function(){-->
+
+        <!--});-->
+        <!--var divScr = document.getElementById("divScr");-->
+        <!--setInterval(function(){-->
+            <!--i++;-->
+            <!--divScr.innerHTML = i;-->
+        <!--},60000);-->
+    <!--}-->
+    <!--function clickTure(){-->
+        <!---->
+    <!--}-->
+<!--</script>-->
+</body>
+</html>

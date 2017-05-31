@@ -1,0 +1,71 @@
+.HeadPortrait {width: rem(375); height: rem(167); background: url("../images/persone/background-L.svg") left top no-repeat; background-size: rem(375) rem(167); position: relative;}
+.HeadPortrait figure {text-align: center; font-size: rem(16); color: $divBackground; line-height: rem(24); margin-top: rem(26);}
+.HeadPortrait figure p ,.HeadPortrait figure img {border-radius: 50%; width: rem(86); height: rem(86);}
+.HeadPortrait figure p {display: inline-block; border-radius: 50%; border: rem(2) solid $divBackground;}
+.HeadPortrait a.personalA {display: block; background: url('../images/icon/arrowR.svg') rem(345) center no-repeat; background-size: rem(25) rem(25);}
+.HeadPortrait a:first-of-type {font-size: rem(14); color: $divBackground; border: rem(1) solid $divBackground; display: inline-block; padding: rem(5) rem(10); margin-top: rem(8); position: absolute; top: rem(3); left: rem(10); border-radius: rem(2);}
+
+.Income {background: $divBackground; height: auto; overflow: hidden; border-top: rem(1) solid #dddddd; border-bottom: rem(1) solid #dddddd; margin-top: rem(10);}
+.Income ul li {width: 50%; float: left;  position: relative; padding: rem(15) 0;}
+.Income ul li:first-of-type {width:100%; text-align: center; border-bottom: rem(1) solid #dddddd; padding: rem(10) 0;}
+.Income ul li:nth-child(2):after {content: ""; height: 100%; border-right: rem(1) solid #dddddd; position: absolute; top: 0; right: 0;}
+.IncomeMarry {padding-left: rem(30);}
+.IncomeMarry p {font-size: rem(16); color: #333333; line-height: rem(24); padding: rem(3) 0;}
+.Income ul li:first-of-type .IncomeMarry p {line-height: rem(30);}
+.IncomeMarry p:first-of-type {font-size: rem(16); color: #999999;}
+.IncomeMarry p a {display: inline-block; float: right; color: #BEAB7D; font-size: rem(14); margin-right: rem(15);}
+.Income ul li:first-of-type .IncomeMarry {padding-left: 0px;}
+.Income ul li:first-of-type .IncomeMarry p:last-of-type { color: #999999;}
+.Income ul li:first-of-type .IncomeMarry p:last-of-type span {font-size: rem(40); color: #FF6333;}
+.reward {height: rem(52); border-top: rem(1) solid #dddddd; border-bottom: rem(1) solid #dddddd; padding: 0 rem(10); background-color: $divBackground; margin-top: rem(10); -webkit-box-sizing: border-box; -moz-box-sizing: border-box;  box-sizing: border-box;}
+.reward a {display: block; font-size: rem(16); color: #333333; line-height: rem(50); background: url('../../app/images/icon/arrowRight.svg') right center no-repeat; background-size: rem(30) auto;}
+.reward a i {width: rem(25); height: rem(25); display: inline-block; background: url("./../../app/images/icon/pig.svg") center center no-repeat; background-size: rem(25) auto; position: relative; top: rem(5); margin-right: rem(5);}
+
+.Verification {width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,.8); display: none; z-index: 115;}
+.TestTitle p {line-height: rem(30);}
+.TestTitle p:first-of-type {font-size: rem(18); }
+.TestTitle p:last-of-type {font-size: rem(12); color: #999999;}
+.TestBtn {border-top: rem(1) solid #dddddd; text-align: center;}
+.TestBtn a {font-size: rem(16); color: #333333; line-height: rem(45); display: block; }
+
+/*parData*/
+.parData {width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: #f8f8f8; z-index: 5; display: none;}
+.parTrue {display: block;}
+.parDataMenu {background: $divBackground; padding-left: rem(15); font-size: rem(16); color: #333333; line-height: rem(50); margin-top: rem(10); border-top: rem(1) solid #dddddd; border-bottom: rem(1) solid #dddddd;}
+.parDataMenu ul li {border-bottom: rem(1) solid #dddddd;}
+.parDataMenu ul li:last-of-type {border-bottom: none;}
+.parDataMenu ul li p:last-of-type a {display: block; background: url("../images/icon/arrowRight.png") right center no-repeat; padding-right: rem(10); background-size: rem(20) auto;}
+.parDataMenu ul li p:last-of-type input {width:95%; height: rem(50); line-height: rem(50); text-align: right; font-size: rem(16); color: #999999;}
+
+/*callBack*/
+.callBack {width: 100%; height: 100%; background-color:#f8f8f8; position: fixed; top: 0; left: 0;  z-index: 10; display: none;}
+.callBackTrue {display: block;}
+.TestBai { display: flex; justify-content: center; flex-direction:column; height: 100%;}
+.callBMian .callBtitle {text-align: center; padding: rem(20) 0; height: auto;}
+.callBMian .callBtitle p {font-size: rem(18); color: #333333; line-height: rem(30);}
+.callBMian .callBtitle p:last-child {color: #666666; }
+.callBMun ul li {background-color: #ffffff; font-size: rem(16); height: rem(50); line-height: rem(50); border-top: rem(1) solid #dddddd; border-bottom: rem(1) solid #dddddd; margin: rem(10) 0; padding: 0 rem(10);}
+.callBMun ul li p:first-of-type {width: rem(80); display:inline-block;}
+.callBMun ul li input {width: 100%; line-height: rem(50); font-size: rem(16); color: #666666;}
+.callBMun ul li:last-of-type p:last-of-type {border-left: rem(1) solid #dddddd; padding-left: rem(15); color: #999999;}
+.callBBtn {width: 90%; height: rem(50); line-height: rem(50); background: linear-gradient(top,#39D736,#1AAE18); background: -webkit-linear-gradient(top,#39D736,#1AAE18); border-radius: rem(5);  margin: 0px auto; margin-top: rem(30); text-align: center;}
+.callBBtn a {display: block; color: #ffffff; font-size: rem(18);}
+.Mobileed {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 15; display: none;
+    .phoneed {
+        width: 100%; height: 100%; display: flex; justify-content: center; flex-direction: column; 
+        .MobileedMun {
+            display: inline-block; background-color: rgba(0,0,0,.8); width: rem(100); margin: 0 auto; text-align: center; padding: rem(20); border-radius: rem(5);
+            p:first-of-type {
+            width: 100%;  height: rem(60); 
+            }
+            p img {
+                width: rem(60); display: inline-block;
+            }
+            p{
+                font-size: rem(16); color: #ffffff;  float:left; display: block; width: 100%;
+            }
+        }
+    }
+}
+.Mobileeded {display: block;}

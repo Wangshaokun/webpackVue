@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Canvas绘制弧线入门示例</title>
+    <style type="text/css">
+        #
+    </style>
+</head>
+<body>
+<div class="classM">
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ul>
+</div>
+<canvas id="canvas" width="500" height="500" style="background-color: #ffffff;"></canvas>
+<script>
+    var canvas=document.getElementById("canvas");
+    var cxt=canvas.getContext("2d");
+    var le = 0;
+    var timer = 120;
+    var trimer = setInterval(function(){
+        if(le<timer){
+            console.log(le);
+            le++;
+            ctxMian(cxt,le);
+        }else{
+            clearInterval(trimer);
+
+        }
+    },60);
+function ctxMian(cxt,line){
+    cxt.beginPath();
+    cxt.arc(300,300,50,0,line,false);
+    cxt.fillStyle="#ffffff";
+    cxt.fill();
+    cxt.strokeStyle="#dcdcdc";
+    cxt.lineWidth=5;
+    cxt.stroke();
+    cxt.closePath();
+}
+</script>
+
+</body>
+</html>
